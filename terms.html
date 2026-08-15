@@ -1,24 +1,281 @@
-# Términos de Servicio — VC Bot
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service | VC Bot</title>
 
-**Última actualización:** 15 de agosto de 2026
+<style>
+:root{
+    --bg:#080a10;
+    --card:#11151f;
+    --primary:#5865f2;
+    --primary2:#8b5cf6;
+    --text:#f5f7ff;
+    --muted:#9ba4b5;
+    --border:rgba(255,255,255,.08);
+}
 
-VC Bot es un bot de Discord diseñado para conectarse y permanecer en canales de voz de un servidor de Discord.
+*{box-sizing:border-box}
 
-## Uso del bot
+body{
+    margin:0;
+    font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+    color:var(--text);
+    background:
+        radial-gradient(circle at 50% -10%,rgba(88,101,242,.25),transparent 40%),
+        var(--bg);
+    line-height:1.7;
+}
 
-Al utilizar VC Bot, aceptas utilizarlo de manera responsable y de acuerdo con las reglas de Discord y las normas del servidor donde esté instalado.
+nav{
+    position:sticky;
+    top:0;
+    z-index:20;
+    background:rgba(8,10,16,.78);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid var(--border);
+}
 
-VC Bot no debe utilizarse para actividades ilegales, abusivas o que interfieran con el funcionamiento normal de Discord.
+.nav{
+    max-width:950px;
+    margin:auto;
+    padding:16px 24px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
 
-## Disponibilidad
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:white;
+    text-decoration:none;
+    font-weight:700;
+}
 
-El funcionamiento del bot puede verse interrumpido temporalmente por mantenimiento, problemas técnicos, errores de conexión u otras circunstancias fuera del control del desarrollador.
+.logo{
+    width:40px;
+    height:40px;
+    border-radius:12px;
+    background:linear-gradient(135deg,var(--primary),var(--primary2));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:13px;
+}
 
-## Cambios
+.links{
+    display:flex;
+    gap:24px;
+}
 
-El desarrollador puede modificar, actualizar o dejar de proporcionar el bot en cualquier momento.
+.links a{
+    color:var(--muted);
+    text-decoration:none;
+    font-size:14px;
+}
 
-## Contacto
+.links a:hover{
+    color:white;
+}
 
-Para cualquier consulta relacionada con VC Bot, puedes contactar con el desarrollador a través del servidor de Discord donde se encuentre instalado el bot.
+.hero{
+    max-width:850px;
+    margin:auto;
+    padding:80px 24px 45px;
+}
 
+.badge{
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:999px;
+    background:rgba(88,101,242,.12);
+    color:#b8bfff;
+    border:1px solid rgba(88,101,242,.25);
+    font-size:13px;
+    font-weight:600;
+}
+
+h1{
+    font-size:clamp(42px,7vw,65px);
+    line-height:1.05;
+    letter-spacing:-2px;
+    margin:22px 0 15px;
+}
+
+.hero p{
+    color:var(--muted);
+    font-size:17px;
+}
+
+.updated{
+    color:#697385;
+    font-size:13px;
+    margin-top:18px;
+}
+
+.content{
+    max-width:850px;
+    margin:auto;
+    padding:0 24px 80px;
+}
+
+.section{
+    background:rgba(17,21,31,.78);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:28px;
+    margin-bottom:16px;
+}
+
+.section h2{
+    margin:0 0 12px;
+    font-size:21px;
+}
+
+.section h2::before{
+    content:"";
+    display:inline-block;
+    width:4px;
+    height:20px;
+    margin-right:10px;
+    vertical-align:-2px;
+    border-radius:5px;
+    background:var(--primary);
+}
+
+.section p{
+    color:#b4bdcc;
+    margin:0;
+}
+
+footer{
+    border-top:1px solid var(--border);
+    text-align:center;
+    padding:30px;
+    color:#697385;
+    font-size:13px;
+}
+
+@media(max-width:650px){
+    .links{gap:12px}
+    .links a{font-size:12px}
+    .hero{padding-top:55px}
+    .section{padding:22px}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav">
+
+        <a href="index.html" class="brand">
+            <div class="logo">VC</div>
+            <span>VC Bot</span>
+        </a>
+
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+        </div>
+
+    </div>
+</nav>
+
+<header class="hero">
+
+    <div class="badge">Legal Center</div>
+
+    <h1>Terms of Service</h1>
+
+    <p>
+        These terms describe the conditions for using VC Bot
+        and its associated services.
+    </p>
+
+    <div class="updated">
+        Last updated: August 15, 2026
+    </div>
+
+</header>
+
+<main class="content">
+
+    <section class="section">
+        <h2>Acceptance of Terms</h2>
+        <p>
+            By adding, accessing or using VC Bot, you agree to these
+            Terms of Service. If you do not agree with these terms,
+            you should not use the service.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Use of the Service</h2>
+        <p>
+            VC Bot is provided for use within Discord servers.
+            Users are responsible for using the bot in accordance
+            with Discord's rules and applicable laws.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Prohibited Use</h2>
+        <p>
+            You must not use VC Bot to engage in illegal activities,
+            abuse the service, interfere with its operation or
+            attempt to gain unauthorized access to systems or data.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Availability</h2>
+        <p>
+            We aim to keep VC Bot available and functional, but
+            uninterrupted availability is not guaranteed. The service
+            may occasionally be unavailable because of maintenance,
+            updates or circumstances outside our control.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Changes to the Service</h2>
+        <p>
+            Features and functionality may be changed, updated,
+            suspended or removed at any time when necessary.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Changes to These Terms</h2>
+        <p>
+            These Terms of Service may be updated from time to time.
+            Continued use of VC Bot after changes are published
+            constitutes acceptance of the updated terms.
+        </p>
+    </section>
+
+    <section class="section">
+        <h2>Contact</h2>
+        <p>
+            If you have questions about these Terms of Service,
+            you can contact the developer through the Discord server
+            where VC Bot is installed.
+        </p>
+    </section>
+
+</main>
+
+<footer>
+    © 2026 VC Bot · All rights reserved.
+</footer>
+
+</body>
+</html>
+```
